@@ -1,0 +1,24 @@
+str1 = raw_input("Enter first string:")#.split()
+str2 = raw_input("Enter second string:")#.split()
+string = 'FLAMES'
+print string
+same = 0
+for i in str1:
+    for j in str2:
+        if i == j:
+            same = same + 2
+            break
+      
+total = len(str1) + len(str2)
+unmatched = total - same
+           
+print unmatched
+   
+def convert_letter(string):
+   new_string = string
+   for k in range(0, len(string)):
+     if ord(string[k]) != 32:
+       new_string = new_string.replace(string[k], '#')
+   print new_string
+convert_letter(string)
+     
